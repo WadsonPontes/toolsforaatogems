@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/sapphire_pickaxe"
+    }, 
+    "parent": "item/handheld"
+}

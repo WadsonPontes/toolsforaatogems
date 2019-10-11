@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        " # ", 
+        " # "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:tanzanite_pickaxe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/tanzanite"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

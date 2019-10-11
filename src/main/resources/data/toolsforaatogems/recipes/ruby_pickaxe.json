@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        " # ", 
+        " # "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:ruby_pickaxe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/ruby"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

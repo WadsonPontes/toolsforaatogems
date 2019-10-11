@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        "  #", 
+        "  #"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:iron_scythe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:ingots/iron"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

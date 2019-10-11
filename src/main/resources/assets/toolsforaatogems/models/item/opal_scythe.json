@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/opal_scythe"
+    }, 
+    "parent": "item/handheld"
+}

@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/topaz_shovel"
+    }, 
+    "parent": "item/handheld"
+}

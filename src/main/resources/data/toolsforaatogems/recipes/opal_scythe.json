@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        "  #", 
+        "  #"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:opal_scythe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/opal"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

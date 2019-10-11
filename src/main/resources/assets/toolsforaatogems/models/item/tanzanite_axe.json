@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/tanzanite_axe"
+    }, 
+    "parent": "item/handheld"
+}

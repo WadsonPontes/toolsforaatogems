@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        "  #", 
+        "  #"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:spinel_scythe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/spinel"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

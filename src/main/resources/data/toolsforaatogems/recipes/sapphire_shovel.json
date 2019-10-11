@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "X", 
+        "#", 
+        "#"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:sapphire_shovel"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/sapphire"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

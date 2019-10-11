@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "X", 
+        "X", 
+        "#"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:amethyst_sword"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/amethyst"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

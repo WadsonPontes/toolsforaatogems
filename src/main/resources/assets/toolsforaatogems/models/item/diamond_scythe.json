@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "toolsforaatogems:item/diamond_scythe"
+    }
+}

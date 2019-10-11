@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XX", 
+        " #", 
+        " #"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:jade_hoe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/jade"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

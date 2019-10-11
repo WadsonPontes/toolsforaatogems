@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "X", 
+        "#", 
+        "#"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:topaz_shovel"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/topaz"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}
