@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        "X#X", 
+        " # "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:peridot_battleaxe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/peridot"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

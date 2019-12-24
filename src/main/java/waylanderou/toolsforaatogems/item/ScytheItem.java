@@ -29,7 +29,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.event.ForgeEventFactory;
-import waylanderou.toolsforaatogems.Config;
+import waylanderou.toolsforaatogems.ToolsConfig;
 import waylanderou.toolsforaatogems.sound.Sounds;
 
 public class ScytheItem extends ToolItem {
@@ -55,7 +55,7 @@ public class ScytheItem extends ToolItem {
 		World world = player.world;
 
 		if(!world.isRemote) {
-			range = Config.scytheRadius.get();
+			range = ToolsConfig.scytheRadius.get();
 			BlockState state = world.getBlockState(pos);
 
 			if (!HARVESTABLES.contains(state.getMaterial())) return false;
@@ -71,7 +71,7 @@ public class ScytheItem extends ToolItem {
 					}
 				}
 			}
-			if(Config.playScytheSound.get()) {
+			if(ToolsConfig.playScytheSound.get()) {
 				((ServerWorld) world).playSound(null, pos, Sounds.SCYTHE_USED, SoundCategory.BLOCKS, 1f, 1f);
 			}			
 			return super.onBlockStartBreak(scythe, pos, player);
@@ -91,7 +91,7 @@ public class ScytheItem extends ToolItem {
 			int harvestCount = 0;
 			PlayerEntity player = context.getPlayer();
 			if(block instanceof IPlantable && block instanceof IGrowable && player != null) {
-				range = Config.scytheRadius.get();
+				range = ToolsConfig.scytheRadius.get();
 				for (int z = pos.getZ() - range; z <= pos.getZ() + range; ++z) {
 					for (int x = pos.getX() - range; x <= pos.getX() + range; ++x) {
 						BlockPos target = new BlockPos(x, pos.getY(), z);
@@ -104,16 +104,16 @@ public class ScytheItem extends ToolItem {
 				}
 				if (harvestCount > 0) {
 					int damageAmount;
-					if(Config.lessDurability.get() == 0) {
+					if(ToolsConfig.lessDurability.get() == 0) {
 						damageAmount = harvestCount;					
 					} else {
-						damageAmount = Config.lessDurability.get();						
+						damageAmount = ToolsConfig.lessDurability.get();						
 					}
 					context.getItem().damageItem(damageAmount, player, (onBroken) -> {
 						onBroken.sendBreakAnimation(context.getHand());	        		
 					});		        			        
 					player.addExhaustion(0.02F);
-					if(Config.playScytheSound.get()) {
+					if(ToolsConfig.playScytheSound.get()) {
 						serverWorld.playSound(null, pos, Sounds.SCYTHE_USED, SoundCategory.BLOCKS, 1f, 1f);
 					}
 
@@ -142,7 +142,7 @@ public class ScytheItem extends ToolItem {
 					foundSeed = true;
 					Random random = new Random();
 					ItemStack seed = new ItemStack(item, random.nextInt(2)+1); //Only spawn one or two seeds, otherwise it's too OP
-					if(Config.scytheDropSeeds.get()) {
+					if(ToolsConfig.scytheDropSeeds.get()) {
 						Block.spawnAsEntity(world, target, seed);				
 					}
 				} else {

@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/spinel_battleaxe"
+    }, 
+    "parent": "item/handheld"
+}

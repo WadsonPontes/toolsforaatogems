@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "toolsforaatogems:item/amethyst_halberd_head"
+    }, 
+    "parent": "item/handheld"
+}

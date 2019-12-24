@@ -26,7 +26,6 @@ public class Items {
 	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":diamond_scythe")
 	public static final ScytheItem DIAMOND_SCYTHE = null;
 
-
 	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":sapphire_scythe")
 	public static final ScytheItem SAPPHIRE_SCYTHE = null;
 
@@ -208,23 +207,114 @@ public class Items {
 	public static final HoeItem OPAL_HOE = null;
 
 
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":sapphire_halberd")
+	public static final Halberd SAPPHIRE_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":sapphire_battleaxe")
+	public static final AxeItem SAPPHIRE_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":sapphire_halberd_head")
+	public static final Item SAPPHIRE_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":ruby_halberd")
+	public static final Halberd RUBY_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":ruby_battleaxe")
+	public static final AxeItem RUBY_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":ruby_halberd_head")
+	public static final Item RUBY_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":spinel_halberd")
+	public static final Halberd SPINEL_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":spinel_battleaxe")
+	public static final AxeItem SPINEL_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":spinel_halberd_head")
+	public static final Item SPINEL_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":amethyst_halberd")
+	public static final Halberd AMETHYST_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":amethyst_battleaxe")
+	public static final AxeItem AMETHYST_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":amethyst_halberd_head")
+	public static final Item AMETHYST_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":jade_halberd")
+	public static final Halberd JADE_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":jade_battleaxe")
+	public static final AxeItem JADE_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":jade_halberd_head")
+	public static final Item JADE_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":peridot_halberd")
+	public static final Halberd PERIDOT_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":peridot_battleaxe")
+	public static final AxeItem PERIDOT_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":peridot_halberd_head")
+	public static final Item PERIDOT_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":topaz_halberd")
+	public static final Halberd TOPAZ_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":topaz_battleaxe")
+	public static final AxeItem TOPAZ_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":topaz_halberd_head")
+	public static final Item TOPAZ_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":tanzanite_halberd")
+	public static final Halberd TANZANITE_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":tanzanite_battleaxe")
+	public static final AxeItem TANZANITE_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":tanzanite_halberd_head")
+	public static final Item TANZANITE_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":onyx_halberd")
+	public static final Halberd ONYX_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":onyx_battleaxe")
+	public static final AxeItem ONYX_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":onyx_halberd_head")
+	public static final Item ONYX_HALBERD_HEAD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":opal_halberd")
+	public static final Halberd OPAL_HALBERD = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":opal_battleaxe")
+	public static final AxeItem OPAL_BATTLEAXE = null;
+
+	@ObjectHolder(ToolsForAatOGems.MOD_ID + ":opal_halberd_head")
+	public static final Item OPAL_HALBERD_HEAD = null;
+
+
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, ItemTier.IRON, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("iron_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, ItemTier.GOLD, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("gold_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, ItemTier.DIAMOND, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("diamond_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, ItemTier.IRON, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("iron_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, ItemTier.GOLD, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("gold_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, ItemTier.DIAMOND, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("diamond_scythe"));
 
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.SAPPHIRE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.RUBY, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.SPINEL, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.AMETHYST, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.JADE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.PERIDOT, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.TOPAZ, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.TANZANITE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.ONYX, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_scythe"));
-		event.getRegistry().register(new ScytheItem(1.5f, -3.0f, CustomItemTier.OPAL, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.SAPPHIRE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.RUBY, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.SPINEL, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.AMETHYST, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.JADE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.PERIDOT, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.TOPAZ, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.TANZANITE, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.ONYX, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_scythe"));
+		event.getRegistry().register(new ScytheItem(2f, -3.0f, CustomItemTier.OPAL, null, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_scythe"));
 
 		event.getRegistry().register(new SwordItem(CustomItemTier.SAPPHIRE, 3, -2.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("sapphire_sword"));	
 		event.getRegistry().register(new SwordItem(CustomItemTier.RUBY, 3, -2.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("ruby_sword"));	
@@ -280,6 +370,40 @@ public class Items {
 		event.getRegistry().register(new HoeItem(CustomItemTier.TANZANITE, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_hoe"));
 		event.getRegistry().register(new HoeItem(CustomItemTier.ONYX, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_hoe"));
 		event.getRegistry().register(new HoeItem(CustomItemTier.OPAL, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_hoe"));
+
+		event.getRegistry().register(new Halberd(CustomItemTier.SAPPHIRE, 24, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("sapphire_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.RUBY, 24, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("ruby_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.SPINEL, 23, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("spinel_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.AMETHYST, 22, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("amethyst_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.JADE, 22, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("jade_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.PERIDOT, 22, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("peridot_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.TOPAZ, 23, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("topaz_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.TANZANITE, 21, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("tanzanite_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.ONYX, 22, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("onyx_halberd"));
+		event.getRegistry().register(new Halberd(CustomItemTier.OPAL, 20, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("opal_halberd"));
+
+		event.getRegistry().register(new AxeItem(CustomItemTier.SAPPHIRE, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.RUBY, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.SPINEL, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.AMETHYST, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.JADE, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.PERIDOT, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.TOPAZ, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.TANZANITE, 7.0F, -3.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.ONYX, 8.0F, -2.8F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_battleaxe"));
+		event.getRegistry().register(new AxeItem(CustomItemTier.OPAL, 7.0F, -3.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_battleaxe"));	
+
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_halberd_head"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_halberd_head"));
+
 	}
 
 }

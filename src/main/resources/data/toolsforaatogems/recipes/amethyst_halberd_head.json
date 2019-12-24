@@ -1,0 +1,19 @@
+{
+    "pattern": [
+        " XX", 
+        "XXX",
+        " XX"
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:amethyst_halberd_head"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/amethyst"
+            }
+        ]
+    }
+}

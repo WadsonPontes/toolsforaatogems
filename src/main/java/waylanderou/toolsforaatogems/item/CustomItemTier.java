@@ -4,11 +4,11 @@ import java.util.function.Supplier;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyLoadBase;
+import net.minecraft.util.LazyValue;
 
 import waylanderou.almostalltheores.item.Items;;
 
-public enum CustomItemTier implements IItemTier {	//TODO change values, maybe this is too OP
+public enum CustomItemTier implements IItemTier {	
 	SAPPHIRE(3, 1361, 8.0F, 3.0F, 10, () -> {
 		return Ingredient.fromItems(Items.SAPPHIRE);
 	}),
@@ -45,7 +45,7 @@ public enum CustomItemTier implements IItemTier {	//TODO change values, maybe th
 	private final float efficiency;
 	private final float attackDamage;
 	private final int enchantability;
-	private final LazyLoadBase<Ingredient> repairMaterial;
+	private final LazyValue<Ingredient> repairMaterial;
 
 	private CustomItemTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn) {
 		this.harvestLevel = harvestLevelIn;
@@ -53,7 +53,7 @@ public enum CustomItemTier implements IItemTier {	//TODO change values, maybe th
 		this.efficiency = efficiencyIn;
 		this.attackDamage = attackDamageIn;
 		this.enchantability = enchantabilityIn;
-		this.repairMaterial = new LazyLoadBase<>(repairMaterialIn);
+		this.repairMaterial = new LazyValue<>(repairMaterialIn);
 	}
 
 	@Override

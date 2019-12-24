@@ -6,7 +6,8 @@ import com.electronwill.nightconfig.core.io.WritingMode;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.loading.FMLPaths;
 
-public class Config {
+public class ToolsConfig {
+
 	private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 	public static ForgeConfigSpec spec;
 
