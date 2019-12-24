@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "XXX", 
+        "X#X", 
+        " # "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:ruby_battleaxe"
+    }, 
+    "key": {
+        "X": [
+            {
+                "tag": "forge:gems/ruby"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

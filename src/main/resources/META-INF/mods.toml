@@ -19,7 +19,7 @@ logoFile="toolsforaatogems.png" #optional
 authors="Waylanderou" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This mod adds a few basic tools for Sapphire, Ruby, spinel, Amethyst, Jade, Peridot, Topaz, Tanzanite, Onyx and Opal from almost all the ores.
+This mod adds a few basic tools for Sapphire, Ruby, spinel, Amethyst, Jade, Peridot, Topaz, Tanzanite, Onyx and Opal from the mod Almost all the Ores.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.toolsforaatogems]] #optional

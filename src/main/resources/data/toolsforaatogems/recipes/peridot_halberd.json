@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "#X", 
+        "# ", 
+        "# "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:peridot_halberd"
+    }, 
+    "key": {
+        "X": [
+            {
+                "item": "toolsforaatogems:peridot_halberd_head"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}

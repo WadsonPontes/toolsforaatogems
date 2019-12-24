@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "#X", 
+        "# ", 
+        "# "
+    ], 
+    "type": "minecraft:crafting_shaped", 
+    "result": {
+        "count": 1, 
+        "item": "toolsforaatogems:tanzanite_halberd"
+    }, 
+    "key": {
+        "X": [
+            {
+                "item": "toolsforaatogems:tanzanite_halberd_head"
+            }
+        ], 
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    }
+}
