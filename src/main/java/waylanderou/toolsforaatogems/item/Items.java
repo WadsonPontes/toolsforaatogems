@@ -360,16 +360,16 @@ public class Items {
 		event.getRegistry().register(new ShovelItem(CustomItemTier.ONYX, 1.5F, -3.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_shovel"));
 		event.getRegistry().register(new ShovelItem(CustomItemTier.OPAL, 1.5F, -3.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_shovel"));
 
-		event.getRegistry().register(new HoeItem(CustomItemTier.SAPPHIRE, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.RUBY, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.SPINEL, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.AMETHYST, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.JADE, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.PERIDOT, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.TOPAZ, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.TANZANITE, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.ONYX, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_hoe"));
-		event.getRegistry().register(new HoeItem(CustomItemTier.OPAL, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.SAPPHIRE, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("sapphire_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.RUBY, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("ruby_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.SPINEL, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("spinel_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.AMETHYST, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("amethyst_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.JADE, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("jade_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.PERIDOT, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("peridot_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.TOPAZ, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("topaz_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.TANZANITE, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("tanzanite_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.ONYX, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("onyx_hoe"));
+		event.getRegistry().register(new CustomHoe(CustomItemTier.OPAL, -2, -1F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName("opal_hoe"));
 
 		event.getRegistry().register(new Halberd(CustomItemTier.SAPPHIRE, 24, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("sapphire_halberd"));
 		event.getRegistry().register(new Halberd(CustomItemTier.RUBY, 24, -3.4F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("ruby_halberd"));

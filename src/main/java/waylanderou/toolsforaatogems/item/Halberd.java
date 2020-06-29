@@ -1,13 +1,16 @@
 package waylanderou.toolsforaatogems.item;
 
+import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap.Builder;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
@@ -19,12 +22,15 @@ import net.minecraft.world.World;
 
 public class Halberd extends TieredItem {
 	private final float attackDamage;
-	private final float attackSpeed;
+	private final Multimap<Attribute, AttributeModifier> attributes;
 
-	public Halberd(IItemTier tierIn, int attackDamageIn, float attackSpeedIn, Item.Properties builder) {
-		super(tierIn, builder);
-		this.attackSpeed = attackSpeedIn;
-		this.attackDamage = (float)attackDamageIn + tierIn.getAttackDamage();		
+	public Halberd(IItemTier tierIn, int attackDamageIn, float attackSpeedIn, Item.Properties properties) {
+		super(tierIn, properties);
+		this.attackDamage = (float)attackDamageIn + tierIn.getAttackDamage();
+		Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+		builder.put(Attributes.field_233823_f_, new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)this.attackDamage, AttributeModifier.Operation.ADDITION));
+		builder.put(Attributes.field_233825_h_, new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", (double)attackSpeedIn, AttributeModifier.Operation.ADDITION));
+		this.attributes = builder.build();
 	}
 
 	public float getAttackDamage() {
@@ -64,13 +70,8 @@ public class Halberd extends TieredItem {
 		return blockIn.getBlock() == Blocks.COBWEB;
 	}
 
-	public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
-		Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(equipmentSlot);
-		if (equipmentSlot == EquipmentSlotType.MAINHAND) {
-			multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double)this.attackDamage, AttributeModifier.Operation.ADDITION));
-			multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", (double)this.attackSpeed, AttributeModifier.Operation.ADDITION));
-		}
-		return multimap;
+	public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType equipmentSlot) {
+		return equipmentSlot == EquipmentSlotType.MAINHAND ? this.attributes : super.getAttributeModifiers(equipmentSlot);
 	}
 
 }

@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[30,)" #mandatory (28 is current forge version)
+loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 issueTrackerURL="https://github.com/waylanderou/toolsforaatogems/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
@@ -14,8 +14,6 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/tools-for-aato-gems" #o
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="toolsforaatogems.png" #optional
 # A text field displayed in the mod UI
-#credits="Thanks for this example mod goes to Java" #optional
-# A text field displayed in the mod UI
 authors="Waylanderou" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
@@ -28,7 +26,7 @@ This mod adds a few basic tools for Sapphire, Ruby, spinel, Amethyst, Jade, Peri
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[30,)" #mandatory
+    versionRange="[32,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
@@ -37,12 +35,12 @@ This mod adds a few basic tools for Sapphire, Ruby, spinel, Amethyst, Jade, Peri
 [[dependencies.toolsforaatogems]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1]"
+    versionRange="[1.16,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.toolsforaatogems]]
     modId="almostalltheores"
 	mandatory=true
-	versionRange="[2.0.0.0,)"
+	versionRange="[3.0.0.0,)"
 	ordering="NONE"
     side="BOTH"
